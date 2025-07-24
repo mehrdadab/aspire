@@ -33,4 +33,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-    
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'securefil.txt'
